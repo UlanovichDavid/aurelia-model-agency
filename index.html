@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AURELIA — Model Management</title>
+  <meta name="description" content="AURELIA is a model management agency representing editorial, runway and campaign faces across Milan, Paris and New York." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop__photo"></div>
+    <div class="backdrop__veil"></div>
+    <div class="backdrop__glow backdrop__glow--amber"></div>
+    <div class="backdrop__glow backdrop__glow--ember"></div>
+    <div class="backdrop__grain"></div>
+  </div>
+
+  <header class="masthead" id="masthead">
+    <div class="shell">
+      <nav class="masthead__bar glass" aria-label="Primary">
+        <a class="brand" href="#top">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <span class="brand__text">
+            <span class="brand__name">Aurelia</span>
+            <span class="brand__sub">Model Management</span>
+          </span>
+        </a>
+
+        <ul class="nav">
+          <li><a class="nav__link is-active" href="#top" aria-current="page">Agency</a></li>
+          <li><a class="nav__link" href="#board">The Board</a></li>
+          <li><a class="nav__link" href="#divisions">Divisions</a></li>
+          <li><a class="nav__link" href="#journal">Journal</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="masthead__actions">
+          <a class="btn btn--glass btn--sm" href="#contact">Book talent</a>
+          <a class="btn btn--light btn--sm" href="#apply">Apply</a>
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-sheet">
+            <span class="sr-only">Open menu</span>
+            <span class="menu-toggle__bars" aria-hidden="true">
+              <span class="menu-toggle__bar"></span>
+              <span class="menu-toggle__bar"></span>
+              <span class="menu-toggle__bar"></span>
+            </span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-sheet glass glass--deep" id="mobile-sheet">
+        <ul class="mobile-sheet__links">
+          <li>
+            <a class="mobile-sheet__link is-active" href="#top">
+              <span>Agency</span>
+              <span class="mobile-sheet__meta">01</span>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-sheet__link" href="#board">
+              <span>The Board</span>
+              <span class="mobile-sheet__meta">02</span>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-sheet__link" href="#divisions">
+              <span>Divisions</span>
+              <span class="mobile-sheet__meta">03</span>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-sheet__link" href="#journal">
+              <span>Journal</span>
+              <span class="mobile-sheet__meta">04</span>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-sheet__link" href="#contact">
+              <span>Contact</span>
+              <span class="mobile-sheet__meta">05</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="mobile-sheet__actions">
+          <a class="btn btn--light btn--wide" href="#apply">
+            Apply as a model
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="M13 6l6 6-6 6" /></svg>
+          </a>
+          <a class="btn btn--glass btn--wide" href="#contact">Book talent</a>
+        </div>
+
+        <div class="mobile-sheet__foot">
+          <a href="#milan">Milan</a>
+          <a href="#paris">Paris</a>
+          <a href="#newyork">New York</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="shell">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="hero__places">
+              <span class="chip"><span class="chip__dot"></span>Booking Spring / Summer 2026</span>
+              <span class="chip">Milan · Paris · New York</span>
+            </div>
+
+            <h1 class="hero__title">
+              Faces that <em class="hero__title-accent">define</em> the season.
+            </h1>
+
+            <p class="hero__lead">
+              AURELIA is a boutique model management agency representing new faces and established
+              talent for editorial, runway and campaign work across four cities and eighteen markets.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--light" href="#apply">
+                Apply as a model
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="M13 6l6 6-6 6" /></svg>
+              </a>
+              <a class="btn btn--glass" href="#board">View the board</a>
+            </div>
+
+            <div class="hero__proof">
+              <div class="hero__faces" aria-hidden="true">
+                <span class="hero__face">NF</span>
+                <span class="hero__face">LK</span>
+                <span class="hero__face">AM</span>
+                <span class="hero__face">+9</span>
+              </div>
+              <p class="hero__proof-text">
+                <strong>124 faces represented</strong>
+                Scouted in 18 cities this year
+              </p>
+            </div>
+          </div>
+
+          <div class="hero__stage">
+            <article class="stage glass">
+              <div class="stage__frame">
+                <span class="chip stage__badge"><span class="chip__dot"></span>Available · Feb 2026</span>
+                <img class="stage__photo" src="assets/hero-editorial.jpg" alt="Editorial portrait of a model represented by AURELIA" />
+                <div class="stage__caption">
+                  <div>
+                    <h2 class="stage__name">Naomi Ferreira</h2>
+                    <span class="stage__spec">Editorial · Runway · Campaign</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stage__specs">
+                <div class="spec">
+                  <span class="spec__label">Height</span>
+                  <span class="spec__value">178 cm</span>
+                </div>
+                <div class="spec">
+                  <span class="spec__label">Bust</span>
+                  <span class="spec__value">82 cm</span>
+                </div>
+                <div class="spec">
+                  <span class="spec__label">Shoes</span>
+                  <span class="spec__value">40 EU</span>
+                </div>
+              </div>
+
+              <div class="stage__footer">
+                <div>
+                  <span class="stage__trend-label">New faces added</span>
+                  <span class="stage__trend-value">12 this month</span>
+                </div>
+                <div class="stage__trend-bars" aria-hidden="true">
+                  <span style="height: 38%"></span>
+                  <span style="height: 56%"></span>
+                  <span style="height: 44%"></span>
+                  <span style="height: 72%"></span>
+                  <span style="height: 100%"></span>
+                </div>
+                <a class="stage__cta" href="#board" aria-label="Open Naomi Ferreira's portfolio">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7" /><path d="M8 7h9v9" /></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat glass">
+            <span class="stat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1.6a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4V20" /><circle cx="9" cy="7" r="3.6" /><path d="M22 20v-1.6a4 4 0 0 0-3-3.87" /><path d="M16.5 3.6a4 4 0 0 1 0 7.2" /></svg>
+            </span>
+            <span class="stat__value">124<span class="stat__unit">faces</span></span>
+            <span class="stat__label">Signed talent on the board</span>
+          </div>
+
+          <div class="stat glass">
+            <span class="stat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.7l1.2-1.8h6.2L15.8 6h2.7A2.5 2.5 0 0 1 21 8.5v8A2.5 2.5 0 0 1 18.5 19h-13A2.5 2.5 0 0 1 3 16.5z" /><circle cx="12" cy="12.4" r="3.4" /></svg>
+            </span>
+            <span class="stat__value">62<span class="stat__unit">campaigns</span></span>
+            <span class="stat__label">Shot with our talent in 2025</span>
+          </div>
+
+          <div class="stat glass">
+            <span class="stat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M3 12h18" /><path d="M12 3c2.6 2.6 2.6 15.4 0 18" /><path d="M12 3c-2.6 2.6-2.6 15.4 0 18" /></svg>
+            </span>
+            <span class="stat__value">18<span class="stat__unit">markets</span></span>
+            <span class="stat__label">Territories our talent works in</span>
+          </div>
+
+          <div class="stat glass">
+            <span class="stat__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18" /><path d="M5 21V8l7-4.5L19 8v13" /><path d="M10 21v-6h4v6" /></svg>
+            </span>
+            <span class="stat__value">04<span class="stat__unit">offices</span></span>
+            <span class="stat__label">Milan · Paris · New York · Copenhagen</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>

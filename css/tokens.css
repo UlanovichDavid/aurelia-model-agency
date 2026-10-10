@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Design tokens — warm dark glassmorphism
+   Palette is charcoal / espresso with an amber accent. No cool gradients.
+   ========================================================================== */
+
+:root {
+  /* --- Base surfaces -------------------------------------------------- */
+  --ink-900: #08070a;
+  --ink-800: #0d0c0c;
+  --ink-700: #14120f;
+  --ink-600: #1c1915;
+
+  /* --- Accent --------------------------------------------------------- */
+  --amber-400: #f4c07a;
+  --amber-500: #e5a355;
+  --amber-600: #c9822f;
+
+  /* --- Text ----------------------------------------------------------- */
+  --text-primary: #f7f2ea;
+  --text-secondary: rgba(247, 242, 234, 0.68);
+  --text-muted: rgba(247, 242, 234, 0.46);
+  --text-on-light: #14120f;
+
+  /* --- Glass ---------------------------------------------------------- */
+  --glass-fill: rgba(255, 255, 255, 0.065);
+  --glass-fill-strong: rgba(255, 255, 255, 0.11);
+  --glass-fill-deep: rgba(20, 18, 15, 0.42);
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-border-soft: rgba(255, 255, 255, 0.09);
+  --glass-highlight: rgba(255, 255, 255, 0.28);
+  --glass-blur: 26px;
+  --glass-blur-strong: 40px;
+
+  /* --- Shadows -------------------------------------------------------- */
+  --shadow-lg: 0 32px 70px -28px rgba(0, 0, 0, 0.85);
+  --shadow-md: 0 22px 48px -24px rgba(0, 0, 0, 0.72);
+  --shadow-sm: 0 12px 28px -16px rgba(0, 0, 0, 0.6);
+  --shadow-inset: inset 0 1px 0 var(--glass-highlight);
+
+  /* --- Radii ---------------------------------------------------------- */
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-xl: 34px;
+  --radius-pill: 999px;
+
+  /* --- Spacing -------------------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* --- Layout --------------------------------------------------------- */
+  --shell-max: 1320px;
+  --shell-pad: clamp(18px, 4vw, 56px);
+  --masthead-height: 76px;
+
+  /* --- Type ----------------------------------------------------------- */
+  --font-display: "Inter Tight", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --step-eyebrow: 0.72rem;
+  --step-small: 0.82rem;
+  --step-body: 1rem;
+  --step-lead: clamp(1rem, 0.6vw + 0.9rem, 1.12rem);
+  --step-h1: clamp(2.6rem, 6.4vw, 5.25rem);
+  --step-h2: clamp(1.5rem, 2.4vw, 2rem);
+  --step-stat: clamp(1.9rem, 3vw, 2.6rem);
+
+  /* --- Motion --------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 0.68, 0.32, 1);
+  --ease-glass: cubic-bezier(0.32, 0.72, 0, 1);
+  --duration-fast: 160ms;
+  --duration-base: 260ms;
+  --duration-slow: 520ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 1ms;
+    --duration-base: 1ms;
+    --duration-slow: 1ms;
+  }
+}
